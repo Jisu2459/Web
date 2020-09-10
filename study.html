@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>WEB - Study</title>
+  <style media="screen">
+    body {
+      font-family: 나눔바른고딕;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function light(bgcolor, color, text) {
+      // var bodyStyle = document.querySelector('body').style;
+      // var i = 0;
+      // var anchor = document.querySelectorAll('a');
+      // bodyStyle.backgroundColor = bgcolor;
+      // bodyStyle.color = color;
+      // while (i < anchor.length) {
+      //   anchor[i].style.color = text;
+      //   i = i + 1;
+      // }
+      $('body').css('backgroundColor', bgcolor);
+      $('body').css('color', color);
+      $('a').css('color', text);
+    }
+  </script>
+</head>
+<body>
+  <p>* 동영상 강의(<a href="https://wikibook.github.io/html-css-js" target="_blank">https://wikibook.github.io/html-css-js</a>)</p>
+  <p>* W3C(<a href="https://www.w3.org" target="_blank">https://www.w3.org</a>) - 국제민간표준화기구의 홈페이지</p>
+  <p>* W3스쿨스(<a href="https://w3schools.com" target="_blank">https://w3schools.com</a>)</p>
+  <p>* 통계에 기반한 학습(<a href="https://advancedwebranking.com/html" target="_blank">https://advancedwebranking.com/html</a>)</p>
+  <p>* 오픈튜토리얼스(<a href="https://opentutorials.org" target="_blank">https://opentutorials.org</a>): 페이스북으로 로그인하기 → 관리자 → 새 모듈(코스) 만들기</p>
+  <p>* 언스플래시(Unsplash, <a href="https://unsplash.com" target="_blank">https://unsplash.com</a>) - 무료 이미지</p>
+  <img src="honeycam.gif">
+  <p>* 표 - <a href="https://opentutorials.org/course/1565/70" target="_blank">생활코딩</a><br>
+    &nbsp; border-style: dotted solid double dashed; <a href="https://hyunjai.tistory.com/451?category=718819" target="_blank">CSS 권장</a></p>
+  <table>
+    <tr>
+      <th>element</th>
+      <th>frequency</th>
+    </tr>
+    <tr>
+      <td>html</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>head</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>body</td>
+      <td>98.8%</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>97.1%</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td>95.4%</td>
+    </tr>
+  </table>
+  <p><input type="button" value="야간모드" onclick="
+      if(this.value === '야간모드') {
+        light('#1E1E21', '#d9d9d9', 'coral');
+        this.value = '주간모드';
+      } else {
+        light('#ffffff', '#202020', 'blue');
+        this.value = '야간모드';
+      }
+      ">
+    <input type="button" value="프로젝트" onclick="location.href='https://jisu2459.github.io/Web'">
+  <p>* 웹의 메소포타미아(<a href="http://info.cern.ch" target="_blank">http://info.cern.ch</a>) - home of the first website</p>
+  <p>* 깃허브(GitHub, <a href="https://github.com" target="_blank">https://github.com</a>)<br>
+  <p>* Internet Protocol Address: <strong>127.0.0.1</strong></p>
+  <p>* IPv4 주소: 10.53.1.138 - localhost</p>
+  <p>* 디스커스(DISQUS, <a href="https://disqus.com" target="_blank">https://disqus.com</a>) 및 라이브리(LiveRe, <a href="https://livere.com" target="_blank">https://livere.com</a>)- 댓글기능</p>
+  <p>* 터크(tawk, <a href="https://www.tawk.to" target="_blank">https://www.tawk.to</a>) - 채팅기능</p>
+  <p>* Google 애널리틱스(<a href="https://analytics.google.com" target="_blank">https://analytics.google.com</a>) - 추적기능</p>
+  <p>* Can I Use(<a href="https://caniuse.com" target="_blank">https://caniuse.com</a>)</p>
+  <p>* 웨버 스터디(<a href="http://webberstudy.com" target="_blank">http://webberstudy.com</a>)</p>
+  <p>* Six Data Types that are <u>primitives</u>:<br>
+    &nbsp; "Undefined"<br>
+    &nbsp; "Boolean"<br>
+    &nbsp; "Number"<br>
+    &nbsp; "String"<br>
+    &nbsp; "bigint"<br>
+    &nbsp; "Symbol" and Object</p>
+  <p>* Console: .toUpperCase(), .toLowerCase(), .trim()</p>
+  <p>* 자바스크립트 라이브러리(jQuery): CDN(Content Delivery Network)</p>
+  <p>* Atom 에디터(<a href="https://atom.io" target="_blank">https://atom.io</a>)</p>
+  <p>* lang 속성은 검색엔진이 언어별로 문서를 나타낼 수 있도록 할 수 있으며, 음성 합성기가 언어에 따른 발음 규칙을 사용할 수 있도록 해주기도 합니다.</p>
+  <p>* media 속성은 CSS 스타일이 최적화되는 미디어나 매체를 명시합니다.</p>
+  <p>* dir 속성은 텍스트의 방향을 지정합니다. "ltr"은 왼쪽에서 오른쪽 방향(기본 설정)을 의미하며, "rtl"은 오른쪽에서 왼쪽 방향을 의미합니다.</p>
+  <p>* 주요한 이스케이프 코드는 아래와 같다.<br>
+    &nbsp; &amp;nbsp; → 공백 (no-break space, U+00A0)<br>
+    &nbsp; &amp;amp; → & (ampersand, U+0026)<br>
+    &nbsp; &amp;lt; → < (less-than sign, U+003C)<br>
+      &nbsp; &amp;gt; → > (greater-than sign, U+003E)<br>
+      &nbsp; &amp;quot; → " (quotation mark, U+0022)<br>
+      &nbsp; &amp;apos; → ' (apostrophe, U+0027)<br></p>
+  <p>* 특수문자 <a href="https://blog.naver.com/munjanet/220939923731" target="_blank">명칭</a></p>
+</body>
+</html>
