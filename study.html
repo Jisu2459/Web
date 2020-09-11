@@ -10,9 +10,15 @@
     table,
     th,
     td {
-      border: 1px solid black;
+      border: 1px solid #0078aa;
       border-collapse: collapse;
       text-align: center;
+    }
+    .u {
+      text-decoration: underline;
+    }
+    .dash {
+      border-bottom: 1px dashed #0078aa;
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -78,7 +84,11 @@
         this.value = '야간모드';
       }
       ">
-    <input type="button" value="프로젝트" onclick="location.href='https://jisu2459.github.io/Web'">
+    <input type="button" value="프로젝트" onclick="location.href='https://jisu2459.github.io/Web'"></p>
+  <p>* <span class="u">주석</span> 처리:<br>
+    &nbsp; 1. HTML → '&lt;!--'와 '--&gt;' 코드<br>
+    &nbsp; 2. CSS → '/*'와 '*/' 코드<br>
+    &nbsp; 3. JavaScript → '//' 코드<br></p>
   <p>* 웹의 메소포타미아(<a href="http://info.cern.ch" target="_blank">http://info.cern.ch</a>) - home of the first website</p>
   <p>* 깃허브(GitHub, <a href="https://github.com" target="_blank">https://github.com</a>)<br>
   <p>* Internet Protocol Address: <strong>127.0.0.1</strong></p>
@@ -88,7 +98,7 @@
   <p>* Google 애널리틱스(<a href="https://analytics.google.com" target="_blank">https://analytics.google.com</a>) - 추적기능</p>
   <p>* Can I Use(<a href="https://caniuse.com" target="_blank">https://caniuse.com</a>)</p>
   <p>* 웨버 스터디(<a href="http://webberstudy.com" target="_blank">http://webberstudy.com</a>)</p>
-  <p>* Six Data Types that are <u>primitives</u>:<br>
+  <p>* Six Data Types that are <span class="dash">primitives</span>:<br>
     &nbsp; "Undefined"<br>
     &nbsp; "Boolean"<br>
     &nbsp; "Number"<br>
@@ -105,9 +115,9 @@
     &nbsp; &amp;nbsp; → 공백 (no-break space, U+00A0)<br>
     &nbsp; &amp;amp; → & (ampersand, U+0026)<br>
     &nbsp; &amp;lt; → < (less-than sign, U+003C)<br>
-      &nbsp; &amp;gt; → > (greater-than sign, U+003E)<br>
-      &nbsp; &amp;quot; → " (quotation mark, U+0022)<br>
-      &nbsp; &amp;apos; → ' (apostrophe, U+0027)<br></p>
+    &nbsp; &amp;gt; → > (greater-than sign, U+003E)<br>
+    &nbsp; &amp;quot; → " (quotation mark, U+0022)<br>
+    &nbsp; &amp;apos; → ' (apostrophe, U+0027)<br></p>
   <p>* 특수문자 <a href="https://blog.naver.com/munjanet/220939923731" target="_blank">명칭</a></p>
 </body>
 </html>
